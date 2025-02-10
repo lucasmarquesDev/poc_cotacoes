@@ -10,8 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\POC_COTACOES.Application\POC_COTACOES.Application.csproj" />
+    <ProjectReference Include="..\POC_COTACOES.Domain\POC_COTACOES.Domain.csproj" />
+    <ProjectReference Include="..\POC_COTACOES.Infrastructure\POC_COTACOES.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -63,3 +63,14 @@ C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\obj\Debug\net8.0\refin
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\obj\Debug\net8.0\POC_COTACOES.API.pdb
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\obj\Debug\net8.0\POC_COTACOES.API.genruntimeconfig.cache
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\obj\Debug\net8.0\ref\POC_COTACOES.API.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Application.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Domain.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Application.pdb
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Domain.pdb
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\MediatR.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Infrastructure.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Infrastructure.pdb
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\AutoMapper.dll
