@@ -1,0 +1,6 @@
+@POC_COTACOES.API_HostAddress = http://localhost:5075
+
+GET {{POC_COTACOES.API_HostAddress}}/buscar-cotacao/
+Accept: application/json
+
+###
