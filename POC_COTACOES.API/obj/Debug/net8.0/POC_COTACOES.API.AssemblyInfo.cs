@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POC_COTACOES.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+937a0a17c27d8db663e50a7c3f029ca61fba820c")]
 [assembly: System.Reflection.AssemblyProductAttribute("POC_COTACOES.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POC_COTACOES.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
