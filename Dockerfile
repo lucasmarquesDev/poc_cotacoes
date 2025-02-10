@@ -9,7 +9,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["./POC_COTACOES.API/POC_COTACOES.API.csproj", "."]
+COPY ["/POC_COTACOES.API/POC_COTACOES.API.csproj", "."]
 
 RUN dotnet restore "/POC_COTACOES.API/POC_COTACOES.API.csproj"
 COPY . .
