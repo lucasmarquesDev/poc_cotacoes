@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restaurar Dependências
-        run: dotnet restore
+        run: dotnet restore POC_COTACOES.sln
 
       - name: Compilar Aplicação
         run: dotnet build --configuration Release --no-restore
