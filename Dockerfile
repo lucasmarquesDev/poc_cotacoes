@@ -12,6 +12,7 @@ WORKDIR /src
 COPY ["POC_COTACOES.API/POC_COTACOES.API.csproj", "."]
 
 RUN dotnet restore "POC_COTACOES.API/POC_COTACOES.API.csproj"
+
 COPY . .
 WORKDIR "/src/."
 RUN dotnet build "POC_COTACOES.API/POC_COTACOES.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
