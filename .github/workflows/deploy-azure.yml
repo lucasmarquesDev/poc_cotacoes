@@ -25,7 +25,7 @@ jobs:
         run: dotnet build POC_COTACOES.API/POC_COTACOES.API.csproj --configuration Release --no-restore
 
       - name: Fazer Login no Azure Container Registry (ACR)
-        run: echo "${{ secrets.AZURE_CREDENTIALS }}" | docker login cotacaoregistry.azurecr.io -u cotacaoregistry -p ${{ secrets.AZURE_PASSWORD }}
+        run: echo "${{ secrets.AZURE_PASSWORD }}" | docker login cotacaoregistry.azurecr.io -u cotacaoregistry -p ${{ secrets.AZURE_PASSWORD }}
 
       - name: Criar Imagem Docker
         run: |
