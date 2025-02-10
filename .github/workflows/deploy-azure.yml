@@ -1,0 +1,40 @@
+name: Deploy para Azure Web App
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Configurar .NET 8
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restaurar Dependências
+        run: dotnet restore
+
+      - name: Compilar Aplicação
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Fazer Login no Azure Container Registry (ACR)
+        run: echo "${{ secrets.AZURE_CREDENTIALS }}" | docker login cotacaoregistry.azurecr.io -u myregistry -p ${{ secrets.AZURE_PASSWORD }}
+
+      - name: Criar Imagem Docker
+        run: |
+          docker build -t cotacaoregistry.azurecr.io/cotacoes-api:latest .
+          docker push cotacaoregistry.azurecr.io/cotacoes-api:latest
+
+      - name: Deploy no Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: "cotacoes-api"
+          slot-name: "production"
+          images: "cotacaoregistry.azurecr.io/cotacoes-api:latest"
