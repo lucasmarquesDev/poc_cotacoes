@@ -74,3 +74,5 @@ C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\Newto
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Infrastructure.dll
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\POC_COTACOES.Infrastructure.pdb
 C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\marqu\source\repos\POC_COTACOES\POC_COTACOES.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

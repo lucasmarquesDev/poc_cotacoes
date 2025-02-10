@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Logging;
 using POC_COTACOES.Domain.Interfaces;
 
 namespace POC_COTACOES.Application.UseCases.GetCotacao
@@ -8,11 +9,13 @@ namespace POC_COTACOES.Application.UseCases.GetCotacao
     {
         private readonly IExternalCotacao _externalCotacao;
         private readonly IMapper _mapper;
+        private readonly ILogger<GetCotacaoHandler> _logger;
 
-        public GetCotacaoHandler(IExternalCotacao externalCotacao, IMapper mapper)
+        public GetCotacaoHandler(IExternalCotacao externalCotacao, IMapper mapper, ILogger<GetCotacaoHandler> logger)
         {
             _externalCotacao = externalCotacao;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task<GetCotacaoResponse> Handle(GetCotacaoRequest request, CancellationToken cancellationToken)
@@ -27,8 +30,9 @@ namespace POC_COTACOES.Application.UseCases.GetCotacao
             }
             catch (Exception ex)
             {
+                _logger.LogCritical($"Erro ex: {ex.Message}");
 
-                throw;
+                return new GetCotacaoResponse();
             }
         }
     }
